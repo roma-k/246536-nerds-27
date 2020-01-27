@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Роман Кодесников](https://up.htmlacademy.ru/htmlcss/27/user/246536).
-* Наставник: [ИгорьБабушкин](https://up.htmlacademy.ru/htmlcss/27/user/185816).
+* Наставник: [Игорь Бабушкин](https://up.htmlacademy.ru/htmlcss/27/user/185816).
 
 ---
 
