@@ -6,9 +6,8 @@
   </head>
   <body>
 <!--Верхняя панель ХЕЙДЕР-->
-    <header>
-      <img src="logo.png" alt="Nerds" width="" height="">
-
+     <header>
+      <a href="index.html" class="nerds_logo"><img src="img/nerds-logo.svg" alt="Nerds" width="160" height="65"></a>
       <nav class="site_nav">
         <ul class="nav_list">
           <li class="nav_item"><a href="">СТУДИЯ</a></li>
@@ -18,9 +17,11 @@
         </ul>
       </nav>
 <!--КОРЗИНА-->
-      <ul class="cart_nav">
-        <li class="cart_list"><a>КОРЗИНА</a></li>
-      </ul>
+      <div>
+       <ul class="cart_nav">
+        <li class="cart_list"><img src="img\basket-icon.png" alt="Корзина" class="basket_ico"><a href="">КОРЗИНА</a></li>
+       </ul>
+      </div>
     </header>
 <!--конец-->
 <!--заголовок-->
@@ -31,6 +32,7 @@
 
 <!--ПАРАМЕТРЫ ШАБЛОНОВ (слева)-->
       <section class="parametrs">
+        <h2>Параметры товаров</h2>
         <p>СТОИМОСТЬ:</p>
     <!--
       =====Здесь должна быть форма====
@@ -65,13 +67,16 @@
           <button type="button" name="sort_up">v</button>
           <button type="button" name="sort_down">^</button>
         </div>
-  <!-- Изображения товаров-->
-        <a href=""><img src="" alt="Шаблон1" width="" height=""></a>
-        <a href=""><img src="" alt="Шаблон2" width="" height=""></a>
-        <a href=""><img src="" alt="Шаблон3" width="" height=""></a>
-        <a href=""><img src="" alt="Шаблон4" width="" height=""></a>
-        <a href=""><img src="" alt="Шаблон5" width="" height=""></a>
-        <a href=""><img src="" alt="Шаблон6" width="" height=""></a>
+        <h2>Результаты поиска</h2>
+  <!-- Изображения товаров
+  заменить на дивы с списке!
+-->
+        <div class=""><a href=""><img src="img\img-sedona-jpg.png" alt="Sedona" width="360" height="576"></a></div>
+        <div class=""><a href=""><img src="img\img-pink-jpg.png" alt="Pink" width="360" height="576"></a></div>
+        <div class=""></div><a href=""><img src="img\img-barbershop-jpg.png" alt="Barbershop" width="360" height="576"></a></div>
+        <div class=""><a href=""><img src="img\img-mishka-jpg.png" alt="Mishka" width="360" height="576"></a></div>
+        <div class=""><a href=""><img src="img\img-aplus-jpg.png" alt="Aplus" width="360" height="576"></a></div>
+        <div class=""><a href=""><img src="img\img-kvast-jpg.png" alt="Kvast" width="360" height="576"></a></div>
       </section>
     </main>
 <!--FOOTER иконки соц.сети-->
