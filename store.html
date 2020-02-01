@@ -34,7 +34,7 @@
 
 <!--ПАРАМЕТРЫ ШАБЛОНОВ (слева)-->
       <section class="parametrs">
-        <h2>Параметры товаров</h2>
+        <h2 class="visually-hidden">Параметры товаров</h2>
         <p>СТОИМОСТЬ:</p>
     <!--
       =====Здесь должна быть форма====
@@ -42,21 +42,53 @@
       |                               |
       ================================
     -->
-        <p>СЕТКА:</p>
-        <ul class="parametrs_web">
-          <li>Адаптивная</li>
-          <li>Фиксированная</li>
-          <li>Резиновая</li>
-        </ul>
-        <p>ОСОБЕННОСТИ:</p>
-        <ul class="parametrs_option">
-          <li>Слайдер</li>
-          <li>Блок преимуществ</li>
-          <li>Новости</li>
-          <li>Галерея</li>
-          <li>Корзина</li>
-        </ul>
-        <button type="button" name="show">ПОКАЗАТЬ</button>
+        <form action="" type="post">
+          <div class="parametrs_web">
+            <p class="setka">СЕТКА:</p>
+            <label for="adapt_id">
+              <input type="radio" name="setka" id="adapt_id" value="adapt" checked>
+              АДАПТИВНАЯ
+            </label>
+            <br>
+            <label for="fixed_id">
+              <input type="radio" name="setka" id="fixed_id" value="fixed">
+              ФИКСИРОВАННАЯ
+            </label>
+            <br>
+            <label for="rezina_id">
+              <input type="radio" name="setka" id="rezina_id" value="rezina">
+              РЕЗИНОВАЯ
+            </label>
+          </div>
+          <div class="parametrs_option">
+            <p class="features">ОСОБЕННОСТИ:</p>
+            <label>
+              <input type="checkbox" name="slider" id="slider_id" checked>
+              Слайдер
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="advantage" id="advantage_id">
+              Блок преимуществ
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="news" id="news_id">
+              Новости
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="galery" id="gelery_id">
+              Галерея
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="cart" id="cart_id">
+              Корзина
+            </label>
+          </div>
+          <input type="submit" name="search_product" id="search_id" value="ПОКАЗАТЬ">
+        </form>
       </section>
 <!--Изобр. шаблонов справа, сортировка-->
       <section class="product_prev">
@@ -69,54 +101,109 @@
           <button type="button" name="sort_up">v</button>
           <button type="button" name="sort_down">^</button>
         </div>
-        <h2>Результаты поиска</h2>
+        <h2 class="visually-hidden">Результаты поиска</h2>
 
 
   <!-- Изображения товаров
 -->
-<!--1--><div class="">
+<!--1--><div class="product">
+          <img src="img/browser.png" alt="browser" width="360" height="40" class="browser_img">
           <a href=""><img src="img\img-sedona-jpg.png" alt="Sedona" width="360" height="576"></a>
+          <div class="hidden_prod_inf">
+            <p>Sedona</p>
+            <p>Информационный сайт 
+              для туристов</p>
+            <button type="button" name="sedona" id="sedona_prod">9 900 РУБ.</button>
+          </div>
         </div>
 
-<!--2--><div class="">
+<!--2--><div class="product">
+          <img src="img/browser.png" alt="browser" width="360" height="40" class="browser_img">
           <a href=""><img src="img\img-pink-jpg.png" alt="Pink" width="360" height="576"></a>
+          <div class="hidden_prod_inf">
+            <p>Pink App</p>
+            <p>Продуктовый лендинг
+              приложения для iOS и Android</p>
+            <button type="button" name="pinkapp" id="pinkapp_prod">9 900 РУБ.</button>
+          </div>        
         </div>
 
-<!--3--><div class="">
+<!--3--><div class="product">
+          <img src="img/browser.png" alt="browser" width="360" height="40" class="browser_img">
           <a href=""><img src="img\img-barbershop-jpg.png" alt="Barbershop" width="360" height="576"></a>
+          <div class="hidden_prod_inf">
+            <p>Barbershop</p>
+            <p>Сайт салона красоты. <br>
+              Для мужчин, да.</p>
+            <button type="button" name="barber" id="barber_prod">9 900 РУБ.</button>
+          </div>        
         </div>
 
-<!--4--><div class="">
+<!--4--><div class="product">
+          <img src="img/browser.png" alt="browser" width="360" height="40" class="browser_img">
           <a href=""><img src="img\img-mishka-jpg.png" alt="Mishka" width="360" height="576"></a>
+          <div class="hidden_prod_inf">
+            <p>MISHKA</p>
+            <p>Интернет-магазин 
+              вязаных игрушек</p>
+            <button type="button" name="mishka" id="mishka_prod">9 900 РУБ.</button>
+          </div>
         </div>
 
-<!--5--><div class="">
+<!--5--><div class="product">
+          <img src="img/browser.png" alt="browser" width="360" height="40" class="browser_img">
           <a href=""><img src="img\img-aplus-jpg.png" alt="Aplus" width="360" height="576"></a>
+          <div class="hidden_prod_inf">
+            <p>A Plus</p>
+            <p>Лендинг курсов повышения квалификации</p>
+            <button type="button" name="aplus" id="aplus_prod">9 900 РУБ.</button>
+          </div>
         </div>
 
-<!--6--><div class="">
+<!--6--><div class="product">
+          <img src="img/browser.png" alt="browser" width="360" height="40" class="browser_img">
           <a href=""><img src="img\img-kvast-jpg.png" alt="Kvast" width="360" height="576"></a>
+          <div class="hidden_prod_inf">
+            <p>КВАСТ</p>
+            <p>Промо-сайт производителя
+              крафтового кваса</p>
+            <button type="button" name="kvast" id="kvast_prod">9 900 РУБ.</button>
+          </div>
         </div>
       </section>
     </main>
 <!--Карта фоном + форма для связи-->
     <section class="map">
-      <h2>Обратная связь</h2>
+      <h2 class="visually-hidden">Обратная связь</h2>
       <div class="adress">
         <p class="contact_name">NЁRDS DESIGN STUDIO</p>
         <P class="contact_adress">191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8 <br>
-          тел. +7 (812) 275-75-75</P>
-        <button type="button" name="scribe">НАПИШИТЕ НАМ</button>
-      </div>
-    </section>
+         ул. Б. Конюшенная, д. 19/8 <br>
+         тел. +7 (812) 275-75-75</P>
+        <button type="button" name="scribe" id="scribe-id">НАПИШИТЕ НАМ</button>
+<!--ФОРМА ОТПРАВКИ ПИСЬМА-->          
+       <div class="visually-hidden">
+          <p class="head_form">Напишите нам</p>
+          <form action="" type="post">
+            <label for="name">Ваше имя:</label><br>
+            <input type="text" name="your_name" id="name"><br>
+            <label for="mail">Ваш e-mail:</label><br>
+            <input type="text" name="your_mail" id="mail"><br>
+            <label for="message">Текст письма:</label><br>
+           <textarea name="your_message" id="message" cols="" rows=""></textarea><br>
+            <input type="submit" name="get" id="get_btn" value="ОТПРАВИТЬ">
+
+          </form>
+    </div>
+  </div>
+</section>
 
 <!--FOOTER иконки соц.сети-->
     <footer>
       <ul class="social">
-        <li class="social_list"><a href="" class="socisl_linl_vk"><img src="" alt="vk" width="" height=""></a></li>
-        <li class="social_list"><a href="" class="social_link_fb"><img src="" alt="fb" width="" height=""></a></li>
-        <li class="social_list"><a href="" class="social_link_instagram"><img src="" alt="instagram" width="" height=""></a></li>
+        <li class="social_list"><a href="" class="socisl_linl_vk"><img src="img/vk-icon.png" alt="vk" width="" height=""></a></li>
+        <li class="social_list"><a href="" class="social_link_fb"><img src="img/fb-icon.png" alt="fb" width="" height=""></a></li>
+        <li class="social_list"><a href="" class="social_link_instagram"><img src="img/insta-icon.png" alt="instagram" width="" height=""></a></li>
       </ul>
 
       <section class="footer_txt">

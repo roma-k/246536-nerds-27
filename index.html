@@ -54,7 +54,7 @@
 
     <main>
       <section class="product">
-        <h1>Дизайн-студия Nёrds</h1>
+        <h1 class="visually-hidden">Дизайн-студия Nёrds</h1>
         <ul class="product_list">
           <li>
             <img src="img/advantage-picture-red.png" alt="ВЕБ-САЙТЫ" width="300" height="146">
@@ -77,33 +77,35 @@
         </ul>
       </section>
 <!--О КОМПАНИИ (СЛЕВА)-->
-      <section class="about_left">
-        <h2>О компании</h2>
-        <p>Мы — маленькая,
-          но гордая дизайн-студия из Краснодара.</p>
-        <p>Исповедуем принципы минимализма и чистоты.
-          Ставим математический рассчет превыше креатива.
-        Работаем непокладая рук как роботы.</p>
-        <p class="about_list">Выполняем заказы на разработку:</p>
-        <ul>
+      <section class="about">
+       <div class="about_left">
+         <h2 class="visually-hidden">О компании</h2>
+         <p>Мы — маленькая,
+           но гордая дизайн-студия из Краснодара.</p>
+         <p>Исповедуем принципы минимализма и чистоты.
+           Ставим математический рассчет превыше креатива.
+         Работаем непокладая рук как роботы.</p>
+         <p class="about_list">Выполняем заказы на разработку:</p>
+         <ul>
           <li>Веб-сайтов любой сложности</li>
           <li>Мобильных приложений для OS и Android</li>
           <li>Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
-      </section>
+         </ul>
+       </div>
 <!--О КОМПАНИИ (СПРАВА), КАРТИНКА, СТАТИСТИКА-->
-      <section class="about_right">
-        <h2>Статистика</h2>
-        <img src="img/nerds-picture.png" alt="Nerds" width="360" height="208">
-        <p>с 2004 года Любим точность во всем:</p>
-        <ul class="about_stat">
-          <li><span>146%</span><br>
-              Уровень самоотдачи</li>
-          <li><span>100%</span><br>
-              Соблюдение сроков</li></li>
-          <li><span>50%</span><br>
+       <div class="about_right">
+         <h2 class="visually-hidden">Статистика</h2>
+         <img src="img/nerds-picture.png" alt="Nerds" width="360" height="208">
+         <p>с 2004 года Любим точность во всем:</p>
+         <ul class="about_stat">
+           <li><span>146%</span><br>
+               Уровень самоотдачи</li>
+           <li><span>100%</span><br>
+               Соблюдение сроков</li></li>
+           <li><span>50%</span><br>
               Минимальная предоплата</li></li>
         </ul>
+       </div>
       </section>
 <!--Партнёры (серые лого)-->
       <div class="logo_partners">
@@ -125,13 +127,27 @@
       </main>
 <!--Карта фоном + форма для связи-->
       <section class="map">
-        <h2>Обратная связь</h2>
+        <h2 class="visually-hidden">Обратная связь</h2>
         <div class="adress">
           <p class="contact_name">NЁRDS DESIGN STUDIO</p>
           <P class="contact_adress">191186, Санкт-Петербург,<br>
             ул. Б. Конюшенная, д. 19/8 <br>
             тел. +7 (812) 275-75-75</P>
           <button type="button" name="scribe">НАПИШИТЕ НАМ</button>
+<!--ФОРМА ОТПРАВКИ ПИСЬМА-->          
+          <div class="visually-hidden">
+            <p>Напишите нам</p>
+            <form action="" type="post">
+              <label for="name">Ваше имя:</label><br>
+              <input type="text" name="your_name" id="name"><br>
+              <label for="mail">Ваш e-mail:</label><br>
+              <input type="text" name="your_mail" id="mail"><br>
+              <label for="message">Текст письма:</label><br>
+              <textarea name="your_message" id="message" cols="" rows=""></textarea><br>
+              <input type="submit" name="get" id="get_btn" value="ОТПРАВИТЬ">
+
+            </form>
+          </div>
         </div>
       </section>
 
@@ -148,6 +164,7 @@
         <p class="footer_txt_p">Скидка 10% для друзей из социальныхсетей.</p>
       </div>
     </footer>
+    
 
   </body>
 </html>
