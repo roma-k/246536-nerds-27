@@ -35,14 +35,15 @@
 <!--ПАРАМЕТРЫ ШАБЛОНОВ (слева)-->
       <section class="parametrs">
         <h2 class="visually-hidden">Параметры товаров</h2>
-        <p>СТОИМОСТЬ:</p>
-    <!--
-      =====Здесь должна быть форма====
-      |                               |
-      |                               |
-      ================================
-    -->
+<!--==ФОРМА============-->
         <form action="" type="post">
+          <div class="parametrs_coast">
+            <p>СТОИМОСТЬ:</p>
+            <input type="range" min="0" max="25000" step="1000" value="5000">
+            <br>
+            <input type="text" name="coast_min" id="coast_min_id" size="5">
+            <input type="text" name="coast_max" id="coast_max_id" size="5">
+          </div>
           <div class="parametrs_web">
             <p class="setka">СЕТКА:</p>
             <label for="adapt_id">
@@ -181,7 +182,7 @@
          ул. Б. Конюшенная, д. 19/8 <br>
          тел. +7 (812) 275-75-75</P>
         <button type="button" name="scribe" id="scribe-id">НАПИШИТЕ НАМ</button>
-<!--ФОРМА ОТПРАВКИ ПИСЬМА-->          
+<!--НАПИШИТЕ НАМ. ФОРМА ОТПРАВКИ ПИСЬМА-->          
        <div class="visually-hidden">
           <p class="head_form">Напишите нам</p>
           <form action="" type="post">
