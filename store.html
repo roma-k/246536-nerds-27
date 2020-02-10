@@ -2,35 +2,42 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="general.css">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
 <!--Верхняя панель ХЕЙДЕР-->
-     <header>
-      <div class="logo">
-        <a href="index.html" class="nerds_logo"><img src="img/nerds-logo.svg" alt="Nerds" width="160" height="65"></a>
-      </div>
-      <nav class="site_nav">
-        <ul class="nav_list">
-          <li class="nav_item"><a href="">СТУДИЯ</a></li>
-          <li class="nav_item"><a href="">КЛИЕНТЫ</a></li>
-          <li class="nav_item"><a href="store.html">МАГАЗИН</a></li>
-          <li class="nav_item"><a href="">КОНТАКТЫ</a></li>
-        </ul>
-      </nav>
-<!--КОРЗИНА-->
-      <div>
-       <ul class="cart_nav">
-        <li class="cart_list"><img src="img\basket-icon.png" alt="Корзина" class="basket_ico"><a href="">КОРЗИНА</a></li>
-       </ul>
+    <header>
+      <div class="head_up">
+        <img src="img/nerds-logo.svg" class="nerds_logo" alt="Nerds" width="160" height="65">
+        <nav class="site_nav">
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a href="">СТУДИЯ</a>
+            </li>
+            <li class="nav_item">
+              <a href="">КЛИЕНТЫ</a>
+            </li>
+            <li class="nav_item">
+              <a href="store.html">МАГАЗИН</a>
+            </li>
+            <li class="nav_item">
+              <a href="">КОНТАКТЫ</a>
+            </li>
+          </ul>
+        </nav>
+<!--КОРЗИНА<img src="img/basket-icon.png" alt="Корзина" class="basket_ico" width="15" height="15">-->
+        <img src="img/basket-icon.png" alt="Корзина" class="basket_ico" width="15" height="15"><a href="" class="cart_ico">КОРЗИНА</a>
       </div>
     </header>
 <!--конец-->
 <!--заголовок-->
     <main>
-      <section>
+      <div class="presets_txt">
         <h1>Магазин готовых шаблонов</h1>
-      </section>
+      </div>
 
 <!--ПАРАМЕТРЫ ШАБЛОНОВ (слева)-->
       <section class="parametrs">
@@ -45,19 +52,19 @@
             <input type="text" name="coast_max" id="coast_max_id" size="5">
           </div>
           <div class="parametrs_web">
-            <p class="setka">СЕТКА:</p>
+            <p class="grid">СЕТКА:</p>
             <label for="adapt_id">
-              <input type="radio" name="setka" id="adapt_id" value="adapt" checked>
+              <input type="radio" name="grid" id="adapt_id" value="adapt" checked>
               АДАПТИВНАЯ
             </label>
             <br>
             <label for="fixed_id">
-              <input type="radio" name="setka" id="fixed_id" value="fixed">
+              <input type="radio" name="grid" id="fixed_id" value="fixed">
               ФИКСИРОВАННАЯ
             </label>
             <br>
-            <label for="rezina_id">
-              <input type="radio" name="setka" id="rezina_id" value="rezina">
+            <label for="grid_id">
+              <input type="radio" name="grid" id="strach_id" value="strach">
               РЕЗИНОВАЯ
             </label>
           </div>
@@ -88,13 +95,15 @@
               Корзина
             </label>
           </div>
-          <input type="submit" name="search_product" id="search_id" value="ПОКАЗАТЬ">
+          <input type="submit" name="search_product" class="search_bttn" id="search_id" value="ПОКАЗАТЬ">
         </form>
       </section>
 <!--Изобр. шаблонов справа, сортировка-->
       <section class="product_prev">
   <!--====ФОРМА СОРТИРОВКИ====-->
-        <div class="sort_txt"><p>СОРТИРОВАТЬ:</p></div>
+        <div class="sort_txt">
+          <p>СОРТИРОВАТЬ:</p>
+        </div>
         <div class="sort_form">
           <button type="button" name="cost_sort">ПО ЦЕНЕ</button>
           <button type="button" name="type_sort">ПО ТИПУ</button>
@@ -103,72 +112,81 @@
           <button type="button" name="sort_down">^</button>
         </div>
         <h2 class="visually-hidden">Результаты поиска</h2>
-
-
-  <!-- Изображения товаров
--->
+  <!-- Изображения товаров-->
 <!--1--><div class="product">
           <img src="img/browser.png" alt="browser" width="360" height="40" class="browser_img">
-          <a href=""><img src="img\img-sedona-jpg.png" alt="Sedona" width="360" height="576"></a>
+          <a href="">
+            <img src="img\img-sedona-jpg.png" alt="Sedona" width="360" height="576">
+          </a>
           <div class="hidden_prod_inf">
             <p>Sedona</p>
             <p>Информационный сайт 
               для туристов</p>
-            <button type="button" name="sedona" id="sedona_prod">9 900 РУБ.</button>
+            <button type="button" name="sedona" id="sedona_prod" class="sedona">9 900 РУБ.</button>
           </div>
         </div>
 
 <!--2--><div class="product">
           <img src="img/browser.png" alt="browser" width="360" height="40" class="browser_img">
-          <a href=""><img src="img\img-pink-jpg.png" alt="Pink" width="360" height="576"></a>
+          <a href="">
+            <img src="img\img-pink-jpg.png" alt="Pink" width="360" height="576">
+          </a>
           <div class="hidden_prod_inf">
             <p>Pink App</p>
             <p>Продуктовый лендинг
               приложения для iOS и Android</p>
-            <button type="button" name="pinkapp" id="pinkapp_prod">9 900 РУБ.</button>
+            <button type="button" name="pinkapp" id="pinkapp_prod" class="pinkapp">9 900 РУБ.</button>
           </div>        
         </div>
 
 <!--3--><div class="product">
           <img src="img/browser.png" alt="browser" width="360" height="40" class="browser_img">
-          <a href=""><img src="img\img-barbershop-jpg.png" alt="Barbershop" width="360" height="576"></a>
+          <a href="">
+            <img src="img\img-barbershop-jpg.png" alt="Barbershop" width="360" height="576">
+          </a>
           <div class="hidden_prod_inf">
             <p>Barbershop</p>
             <p>Сайт салона красоты. <br>
               Для мужчин, да.</p>
-            <button type="button" name="barber" id="barber_prod">9 900 РУБ.</button>
+            <button type="button" name="barber" id="barber_prod" class="barber">9 900 РУБ.</button>
           </div>        
         </div>
 
 <!--4--><div class="product">
           <img src="img/browser.png" alt="browser" width="360" height="40" class="browser_img">
-          <a href=""><img src="img\img-mishka-jpg.png" alt="Mishka" width="360" height="576"></a>
+          <a href="">
+            <img src="img\img-mishka-jpg.png" alt="Mishka" width="360" height="576">
+          </a>
           <div class="hidden_prod_inf">
             <p>MISHKA</p>
             <p>Интернет-магазин 
               вязаных игрушек</p>
-            <button type="button" name="mishka" id="mishka_prod">9 900 РУБ.</button>
+            <button type="button" name="mishka" id="mishka_prod" class="mishka">9 900 РУБ.</button>
           </div>
         </div>
 
 <!--5--><div class="product">
           <img src="img/browser.png" alt="browser" width="360" height="40" class="browser_img">
-          <a href=""><img src="img\img-aplus-jpg.png" alt="Aplus" width="360" height="576"></a>
+          <a href="">
+            <img src="img\img-aplus-jpg.png" alt="Aplus" width="360" height="576">
+          </a>
           <div class="hidden_prod_inf">
             <p>A Plus</p>
             <p>Лендинг курсов повышения квалификации</p>
-            <button type="button" name="aplus" id="aplus_prod">9 900 РУБ.</button>
+            <button type="button" name="aplus" id="aplus_prod" class="aplus">9 900 РУБ.</button>
           </div>
         </div>
 
 <!--6--><div class="product">
           <img src="img/browser.png" alt="browser" width="360" height="40" class="browser_img">
-          <a href=""><img src="img\img-kvast-jpg.png" alt="Kvast" width="360" height="576"></a>
+          <a href="">
+            <img src="img\img-kvast-jpg.png" alt="Kvast" width="360" height="576">
+          </a>
           <div class="hidden_prod_inf">
             <p>КВАСТ</p>
             <p>Промо-сайт производителя
               крафтового кваса</p>
-            <button type="button" name="kvast" id="kvast_prod">9 900 РУБ.</button>
+            <button type="button" name="kvast" id="kvast_prod" class="kvast">9 900 РУБ.</button>
           </div>
         </div>
       </section>
@@ -179,38 +197,55 @@
       <div class="adress">
         <p class="contact_name">NЁRDS DESIGN STUDIO</p>
         <P class="contact_adress">191186, Санкт-Петербург,<br>
-         ул. Б. Конюшенная, д. 19/8 <br>
-         тел. +7 (812) 275-75-75</P>
-        <button type="button" name="scribe" id="scribe-id">НАПИШИТЕ НАМ</button>
-<!--НАПИШИТЕ НАМ. ФОРМА ОТПРАВКИ ПИСЬМА-->          
-       <div class="visually-hidden">
-          <p class="head_form">Напишите нам</p>
+                                  ул. Б. Конюшенная, д. 19/8 
+        <br>
+        <br>
+        тел. +7 (812) 275-75-75</P>
+        <button type="button" name="scribe" class="contact_red_button">НАПИШИТЕ НАМ</button>
+<!--ФОРМА ОТПРАВКИ ПИСЬМА-->
+        <div class="visually-hidden">
+          <p>Напишите нам</p>
           <form action="" type="post">
-            <label for="name">Ваше имя:</label><br>
-            <input type="text" name="your_name" id="name"><br>
-            <label for="mail">Ваш e-mail:</label><br>
-            <input type="text" name="your_mail" id="mail"><br>
-            <label for="message">Текст письма:</label><br>
-           <textarea name="your_message" id="message" cols="" rows=""></textarea><br>
+            <label for="name">Ваше имя:</label>
+            <br>
+            <input type="text" name="your_name" id="name">
+            <br>
+            <label for="mail">Ваш e-mail:</label>
+            <br>
+            <input type="text" name="your_mail" id="mail">
+            <br>
+            <label for="message">Текст письма:</label>
+            <br>
+            <textarea name="your_message" id="message" cols="" rows=""></textarea>
+            <br>
             <input type="submit" name="get" id="get_btn" value="ОТПРАВИТЬ">
-
           </form>
-    </div>
-  </div>
-</section>
+        </div>
+      </div>
+    </section>
 
 <!--FOOTER иконки соц.сети-->
-    <footer>
-      <ul class="social">
-        <li class="social_list"><a href="" class="socisl_linl_vk"><img src="img/vk-icon.png" alt="vk" width="" height=""></a></li>
-        <li class="social_list"><a href="" class="social_link_fb"><img src="img/fb-icon.png" alt="fb" width="" height=""></a></li>
-        <li class="social_list"><a href="" class="social_link_instagram"><img src="img/insta-icon.png" alt="instagram" width="" height=""></a></li>
-      </ul>
-
-      <section class="footer_txt">
-        <h3 class="footer_txt_header">Давайте дружить, это выгодно!</h3>
+    <footer>      
+      <a href="" class="socisl_link_vk">
+        <div class="social_list">
+          <div class="vk"></div>
+        </div>
+      </a>
+      <a href="" class="social_link_fb">
+        <div class="social_list">
+          <div class="fb"></div>
+        </div>
+      </a>
+      <a href="" class="social_link_instagram">
+        <div class="social_list">
+          <div class="insta"></div>
+        </div>
+      </a>
+  
+      <div class="footer_txt">
+        <p class="footer_txt_header">Давайте дружить, это выгодно!</p>
         <p class="footer_txt_p">Скидка 10% для друзей из социальныхсетей.</p>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
