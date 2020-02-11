@@ -658,7 +658,4 @@ header {
 
 .visually-hidden {
   display: none;
-  line-height: 1px;
-  margin: 0;
-  padding: 0;
 }
