@@ -3,13 +3,18 @@ body {
   margin: 0;
   width: 1440px;
   color: black;
-  font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+  font-family: Roboto, Arial sans-serif;
   background: white;
 }
 
 a {
   color: black;
   text-decoration: none;
+  text-transform: uppercase;
+}
+
+h2 {
+  text-transform: uppercase;
 }
 
 header {
@@ -29,14 +34,12 @@ header {
 }
 
 .nerds_logo {
- display: flex;
- margin-top: 49px;
-
+  display: flex;
+  margin-top: 49px;
 }
 
 .site_nav {
   display: inline-flex;
-  margin-right:;
   margin-top: 49px;
   align-items: center;
 }
@@ -54,6 +57,7 @@ header {
   font-weight: 500;
   line-height: 30px;
   font-size: 16px;
+  text-transform: uppercase;
   color: black;
 }
 
@@ -73,6 +77,7 @@ header {
   font-weight: 500;
   line-height: 30px;
   font-size: 16px;
+  text-transform: uppercase;
   color: black;
   border-bottom: 3px #fb565a solid;
 }
@@ -147,7 +152,7 @@ header {
 
 .slide3 {
   display: flex;
-} 
+}
 
 .slide1 .kontent_text {
   width: 361px;
@@ -186,7 +191,7 @@ header {
 
 .product_list li {
   justify-items: start;
-  width: 300px;  
+  width: 300px;
 }
 
 .about {
@@ -205,7 +210,6 @@ header {
 
 /*СЛАЙДЕР*/
 
-
 .kontent_text {
   color: black;
   font-size: 16px;
@@ -213,7 +217,6 @@ header {
 }
 
 /* MAIN*/
-
 
 .product_list h2 {
   font-size: 24px;
@@ -247,7 +250,7 @@ header {
 
 /*О КОМПАНИИ (СПРАВА), КАРТИНКА, СТАТИСТИКА*/
 
-.about_stat{
+.about_stat {
   padding-left: 0;
 }
 
@@ -281,7 +284,7 @@ header {
   filter: alpha(opacity=20);
 }
 
-.partners_list img:hover  {
+.partners_list img:hover {
   object-fit: contain;
   opacity: 1;
   filter: alpha(opacity=100);
@@ -293,7 +296,7 @@ header {
   filter: alpha(opacity=100);
 }
 
-.partners_list img:active{
+.partners_list img:active {
   object-fit: contain;
   opacity: 0.1;
   filter: alpha(opacity=10);
@@ -305,6 +308,7 @@ header {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .contact_adress {
@@ -316,7 +320,7 @@ header {
 .map {
   width: 1440px;
   height: 416px;
-  background: url(../img/2.png)  thistle;
+  background: url(../img/2.png) thistle;
 }
 
 .adress {
@@ -346,8 +350,9 @@ header {
 }
 
 .social_list:active {
-  background-color:  #d7373b;
+  background-color: #d7373b;
 }
+
 .fb {
   width: 75px;
   height: 75px;
@@ -422,6 +427,7 @@ header {
 
 /*Заказать красная1*/
 .order_red_button {
+  display: inline-block;
   color: white;
   font-size: 16px;
   font-weight: 500;
@@ -448,6 +454,7 @@ header {
 /*Заказать зелёная1*/
 
 .order_green_button {
+  display: inline-block;
   color: white;
   font-size: 16px;
   font-weight: 500;
@@ -462,7 +469,7 @@ header {
 }
 
 .order_green_button:hover,
-.order_green_button:focus  {
+.order_green_button:focus {
   background-color: #00bc6c;
 }
 
@@ -505,6 +512,7 @@ header {
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
+  text-transform: uppercase;
   background-color: #fb565a;
   padding: 15px 37px;
   border-radius: 4px;
@@ -525,6 +533,7 @@ header {
   color: rgba(255, 255, 255, 0.3);
   background-color: #e74246;
 }
+
 /*=========================================================
 =========STORE===========================================*/
 
@@ -601,6 +610,7 @@ header {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .prod_name {
@@ -657,5 +667,9 @@ header {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }

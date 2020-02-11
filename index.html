@@ -1,192 +1,208 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalise.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
-<!--Верхняя панель ХЕЙДЕР-->
-    <header>
-      <div class="head_up">
-        <a href="#"><img src="img/nerds-logo.svg" class="nerds_logo" alt="Nerds" width="160" height="65"></a>
-        <nav class="site_nav">
-          <ul class="nav_list">
-            <li class="nav_item"><a href="">СТУДИЯ</a></li>
-            <li class="nav_item"><a href="">КЛИЕНТЫ</a></li>
-            <li class="nav_item"><a href="store.html">МАГАЗИН</a></li>
-            <li class="nav_item"><a href="">КОНТАКТЫ</a></li>
-          </ul>
-        </nav>
-<!--КОРЗИНА<img src="img/basket-icon.png" alt="Корзина" class="basket_ico" width="15" height="15">-->
-        <div class="cart nav_item">
-          <img src="img/basket-icon.png" alt="Корзина" class="basket_ico" width="15" height="15">
-          <a href="" class="cart_ico">КОРЗИНА</a>
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic-ext"
+        rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>HTML Academy: Нёрдс</title>
+</head>
+<body>
+
+<header>
+  <div class="head_up">
+    <a href="index.html"><img src="img/nerds-logo.svg" class="nerds_logo" alt="Nerds" width="160" height="65"></a>
+    <nav class="site_nav">
+      <ul class="nav_list">
+        <li class="nav_item"><a href="">Студия</a></li>
+        <li class="nav_item"><a href="">Клиенты</a></li>
+        <li class="nav_item"><a href="store.html">Магазин</a></li>
+        <li class="nav_item"><a href="">Контакты</a></li>
+      </ul>
+    </nav>
+    <!--КОРЗИНА<img src="img/basket-icon.png" alt="Корзина" class="basket_ico" width="15" height="15">-->
+    <div class="cart nav_item">
+      <img src="img/basket-icon.png" alt="Корзина" class="basket_ico" width="15" height="15">
+      <a href="" class="cart_ico">Корзина</a>
+    </div>
+  </div>
+  <!--СЛАЙДЕР-->
+  <div class="head_bottom">
+    <ul class="slider_list">
+      <li class="slide1">
+        <div class="slider_text_container">
+          <p class="kontent_header">Долго, дорого, скрупулезно.</p>
+          <p class="kontent_text">Математически выверенный дизайн для вашего
+            сайта или мобильного приложения.</p>
+          <a href="" class="slider_red_button">Узнать больше</a>
         </div>
-      </div>
-<!--СЛАЙДЕР-->
-      <div class="head_bottom">
-        <ul class="slider_list">
-          <li class="slide1">
-            <div class="slider_text_container">
-              <p class="kontent_header">Долго, дорого,  скрупулезно.</p>
-              <p class="kontent_text">Математически выверенный дизайн  для вашего
-              сайта или мобильного приложения.</p>
-              <a href="" class="slider_red_button">УЗНАТЬ БОЛЬШЕ</a>
-            </div>
-            <img src="img/slide-picture.png" alt="Изображение1" width="698" height="413">
-          </li>
-          <li class="slide2 visually-hidden">
-            <div class="slider_text_container2">
-              <p class="kontent_header">Любим математику как никто другой</p>
-              <p class="kontent_text">Никакого креатива, только
-              математические формулы  для расчета идеальных пропорций.</p>
-              <a href="" class="slider_red_button">УЗНАТЬ БОЛЬШЕ</a>
-            </div>
-            <img src="img/slide2.png" alt="Изображение2" width="663" height="430">
-          </li>
-          <li class="slide3 visually-hidden">
-            <div class="slider_text_container3">
-              <p class="kontent_header">Только ночь, только хардкор</p>
-              <p class="kontent_text">Работать днем, как все?
-               Мы против этого. Ближе к полуночи работа только начинается.</p>
-              <a href="" class="slider_red_button">УЗНАТЬ БОЛЬШЕ</a>
-            </div>
-            <img src="img/slide3.png" alt="Изображение3" width="759" height="411">
-          </li>
-        </ul>
-      </div>
-    </header>
-    <main>
-      <section class="product">
-        <h1 class="visually-hidden">Дизайн-студия Nёrds</h1>
-        <ul class="product_list">
-          <li>
-            <div>
-              <img src="img/advantage-picture-red.png" alt="ВЕБ-САЙТЫ" width="300" height="146">
-              <h2>ВЕБ-САЙТЫ</h2>
-              <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-              <a href="" class="order_red_button">ЗАКАЗАТЬ</a>
-            </div>
-          </li>
-          <li>
-            <div>
-              <img src="img/advantage-picture-green.png" alt="ВЕБ-САЙТЫ" width="300" height="146">
-              <h2>ПРИЛОЖЕНИЯ</h2>
-              <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-              <a href="" class="order_green_button">ЗАКАЗАТЬ</a>
-            </div>
-          </li>
-          <li>
-            <div>
-              <img src="img/advantage-picture-yellow.png" alt="ВЕБ-САЙТЫ" width="300" height="146">
-              <h2>ПРЕЗЕНТАЦИИ</h2>
-              <p>Вы даже не подозреваете,  насколько вы изумительны!</p>
-              <a href="" class="order_yellow_button">ЗАКАЗАТЬ</a>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <hr>
-<!--О КОМПАНИИ (СЛЕВА)-->
-      <section class="about">
-        <div class="about_left">
-          <h2 class="visually-hidden">О компании</h2>
-          <p class="about_header">Мы — маленькая,
-            но гордая дизайн-студия из Краснодара.</p>
-          <p class="kontent_text">Исповедуем принципы минимализма и чистоты.
-            Ставим математический рассчет превыше креатива.
-            Работаем непокладая рук как роботы.</p>
-          <p class="kontent_text_bold">Выполняем заказы на разработку:</p>
-          <ul>
-            <li>Веб-сайтов любой сложности</li>
-            <li>Мобильных приложений для OS и Android</li>
-            <li>Слайдшоу и видео для корпоративных презентаций</li>
-          </ul>
+        <img src="img/slide-picture.png" alt="Изображение1" width="698" height="413">
+      </li>
+      <li class="slide2 visually-hidden">
+        <div class="slider_text_container2">
+          <p class="kontent_header">Любим математику как никто другой</p>
+          <p class="kontent_text">Никакого креатива, только
+            математические формулы для расчета идеальных пропорций.</p>
+          <a href="" class="slider_red_button">Узнать больше</a>
         </div>
-<!--О КОМПАНИИ (СПРАВА), КАРТИНКА, СТАТИСТИКА-->
-        <div class="about_right">
-          <h2 class="visually-hidden">Статистика</h2>
-          <img src="img/nerds-picture.png" alt="Nerds" width="360" height="208">
-          <p class="kontent_text_bold">с 2004 года Любим точность во всем:</p>
-          <ul class="about_stat">
-            <li><span class="stat_number_bold">146<sup>%</sup></span>
-               Уровень самоотдачи</li>
-            <li><span class="stat_number_bold">100<sup>%</sup></span>
-               Соблюдение сроков</li></li>
-            <li><span class="stat_number_bold">50<sup>%</sup></span>
-              Минимальная предоплата</li></li>
-          </ul>
+        <img src="img/slide2.png" alt="Изображение2" width="663" height="430">
+      </li>
+      <li class="slide3 visually-hidden">
+        <div class="slider_text_container3">
+          <p class="kontent_header">Только ночь, только хардкор</p>
+          <p class="kontent_text">Работать днем, как все?
+            Мы против этого. Ближе к полуночи работа только начинается.</p>
+          <a href="" class="slider_red_button">Узнать больше</a>
         </div>
-      </section>
-<!--Партнёры (серые лого)-->
-      <div class="logo_partners">
-        <hr>
-        <ul class="partners_list">
-          <li>
-            <a href="htmlacademy.ru"> 
-              <img src="img/htmlacdemy-logo.png" alt="htmlacademy.ru" width="199" height="68">
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src="img/borodinsli-logo.png" alt="Borodinsky" width="209" height="90">
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src="img/pink-logo.png" alt="Pink" width="185" height="52">
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src="img/mishka-logo.png" alt="Mishka" width="173" height="84">
-            </a>
-          </li>
-        </ul>
-        <hr>
-      </div>
-    </main>
+        <img src="img/slide3.png" alt="Изображение3" width="759" height="411">
+      </li>
+    </ul>
+  </div>
+</header>
+<main>
+  <section class="product">
+    <h1 class="visually-hidden">Дизайн-студия Nёrds</h1>
+    <ul class="product_list">
+      <li>
+        <div>
+          <img src="img/advantage-picture-red.png" alt="ВЕБ-САЙТЫ" width="300" height="146">
+          <h2>Веб-сайты</h2>
+          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a href="" class="order_red_button">Заказать</a>
+        </div>
+      </li>
+      <li>
+        <div>
+          <img src="img/advantage-picture-green.png" alt="ВЕБ-САЙТЫ" width="300" height="146">
+          <h2>Приложения</h2>
+          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a href="" class="order_green_button">Заказать</a>
+        </div>
+      </li>
+      <li>
+        <div>
+          <img src="img/advantage-picture-yellow.png" alt="ВЕБ-САЙТЫ" width="300" height="146">
+          <h2>Презентации</h2>
+          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a href="" class="order_yellow_button">Заказать</a>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <hr>
+  <!--О КОМПАНИИ (СЛЕВА)-->
+  <section class="about">
+    <div class="about_left">
+      <h2 class="visually-hidden">О компании</h2>
+      <p class="about_header">Мы — маленькая,
+        но гордая дизайн-студия из Краснодара.</p>
+      <p class="kontent_text">Исповедуем принципы минимализма и чистоты.
+        Ставим математический рассчет превыше креатива.
+        Работаем непокладая рук как роботы.</p>
+      <p class="kontent_text_bold">Выполняем заказы на разработку:</p>
+      <ul>
+        <li>Веб-сайтов любой сложности</li>
+        <li>Мобильных приложений для OS и Android</li>
+        <li>Слайдшоу и видео для корпоративных презентаций</li>
+      </ul>
+    </div>
+    <!--О КОМПАНИИ (СПРАВА), КАРТИНКА, СТАТИСТИКА-->
+    <div class="about_right">
+      <h2 class="visually-hidden">Статистика</h2>
+      <img src="img/nerds-picture.png" alt="Nerds" width="360" height="208">
+      <p class="kontent_text_bold">с 2004 года Любим точность во всем:</p>
+      <ul class="about_stat">
+        <li><span class="stat_number_bold">146<sup>%</sup></span>
+          Уровень самоотдачи
+        </li>
+        <li><span class="stat_number_bold">100<sup>%</sup></span>
+          Соблюдение сроков
+        </li>
+        <li><span class="stat_number_bold">50<sup>%</sup></span>
+          Минимальная предоплата
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!--Партнёры (серые лого)-->
+  <div class="logo_partners">
+    <hr>
+    <ul class="partners_list">
+      <li>
+        <a href="htmlacademy.ru">
+          <img src="img/htmlacdemy-logo.png" alt="htmlacademy.ru" width="199" height="68">
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <img src="img/borodinsli-logo.png" alt="Borodinsky" width="209" height="90">
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <img src="img/pink-logo.png" alt="Pink" width="185" height="52">
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <img src="img/mishka-logo.png" alt="Mishka" width="173" height="84">
+        </a>
+      </li>
+    </ul>
+    <hr>
+  </div>
+</main>
 <!--Карта фоном + форма для связи-->
-    <section class="map">
-      <h2 class="visually-hidden">Обратная связь</h2>
-      <div class="adress">
-        <p class="contact_name">NЁRDS DESIGN STUDIO</p>
-        <P class="contact_adress">191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8 
-          <br>
-          <br>
-            тел. +7 (812) 275-75-75</P>
-        <button type="button" name="scribe" class="contact_red_button">НАПИШИТЕ НАМ</button>
-<!--ФОРМА ОТПРАВКИ ПИСЬМА-->
-        <div class="visually-hidden">
-          <p>Напишите нам</p>
-          <form action="" type="post">
-            <label for="name">Ваше имя:</label><br>
-            <input type="text" name="your_name" id="name" placeholder="Иван"><br>
-            <label for="mail">Ваш e-mail:</label><br>
-            <input type="text" name="your_mail" id="mail" placeholder="exemple@ya.ru"><br>
-            <label for="message">Текст письма:</label><br>
-            <textarea name="your_message" id="message" cols="" rows=""></textarea><br>
-            <input type="submit" name="get" id="get_btn" value="ОТПРАВИТЬ">
-          </form>
-        </div>
-      </div>
-    </section>
+<section class="map">
+  <h2 class="visually-hidden">Обратная связь</h2>
+  <div class="adress">
+    <p class="contact_name">Nёrds design studio</p>
+    <P class="contact_adress">191186, Санкт-Петербург,<br>
+      ул. Б. Конюшенная, д. 19/8
+      <br>
+      <br>
+      тел. +7 (812) 275-75-75</P>
+    <button type="button" name="scribe" class="contact_red_button">напишите нам</button>
+    <!--ФОРМА ОТПРАВКИ ПИСЬМА-->
+    <div class="visually-hidden">
+      <p>Напишите нам</p>
+      <form action="" type="post">
+        <label for="name">Ваше имя:</label><br>
+        <input type="text" name="your_name" id="name" placeholder="Иван"><br>
+        <label for="mail">Ваш e-mail:</label><br>
+        <input type="text" name="your_mail" id="mail" placeholder="exemple@ya.ru"><br>
+        <label for="message">Текст письма:</label><br>
+        <textarea name="your_message" id="message" cols="" rows=""></textarea><br>
+        <input type="submit" name="get" id="get_btn" value="ОТПРАВИТЬ">
+      </form>
+    </div>
+  </div>
+</section>
 
 <!--FOOTER иконки соц.сети-->
-    <footer>      
-      <div class="social">
-        <a href="" class="socisl_link_vk"><div class="social_list"><div class="vk"></div></div></a>
-        <a href="" class="social_link_fb"><div class="social_list"><div class="fb"></div></div></a>
-        <a href="" class="social_link_instagram"><div class="social_list"><div class="insta"></div></div></a> 
-      </div> 
-      <div class="footer_txt">
-        <p class="footer_txt_header">Давайте дружить, это выгодно!</p>
-        <p class="footer_txt_p">Скидка 10% для друзей из социальныхсетей.</p>
+<footer>
+  <div class="social">
+    <a href="" class="socisl_link_vk">
+      <div class="social_list">
+        <div class="vk"></div>
       </div>
-    </footer>
-  </body>
+    </a>
+    <a href="" class="social_link_fb">
+      <div class="social_list">
+        <div class="fb"></div>
+      </div>
+    </a>
+    <a href="" class="social_link_instagram">
+      <div class="social_list">
+        <div class="insta"></div>
+      </div>
+    </a>
+  </div>
+  <div class="footer_txt">
+    <p class="footer_txt_header">Давайте дружить, это выгодно!</p>
+    <p class="footer_txt_p">Скидка 10% для друзей из социальныхсетей.</p>
+  </div>
+</footer>
+</body>
 </html>
