@@ -4,32 +4,27 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/normalise.css">
-    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
 <!--Верхняя панель ХЕЙДЕР-->
     <header>
       <div class="head_up">
-        <img src="img/nerds-logo.svg" class="nerds_logo" alt="Nerds" width="160" height="65">
+        <a href="#"><img src="img/nerds-logo.svg" class="nerds_logo" alt="Nerds" width="160" height="65"></a>
         <nav class="site_nav">
           <ul class="nav_list">
-            <li class="nav_item">
-              <a href="">СТУДИЯ</a>
-            </li>
-            <li class="nav_item">
-              <a href="">КЛИЕНТЫ</a>
-            </li>
-            <li class="nav_item">
-              <a href="store.html">МАГАЗИН</a>
-            </li>
-            <li class="nav_item">
-              <a href="">КОНТАКТЫ</a>
-            </li>
+            <li class="nav_item"><a href="">СТУДИЯ</a></li>
+            <li class="nav_item"><a href="">КЛИЕНТЫ</a></li>
+            <li class="nav_item nav_active">МАГАЗИН</li>
+            <li class="nav_item"><a href="">КОНТАКТЫ</a></li>
           </ul>
         </nav>
 <!--КОРЗИНА<img src="img/basket-icon.png" alt="Корзина" class="basket_ico" width="15" height="15">-->
-        <img src="img/basket-icon.png" alt="Корзина" class="basket_ico" width="15" height="15"><a href="" class="cart_ico">КОРЗИНА</a>
+        <div class="cart nav_item">
+          <img src="img/basket-icon.png" alt="Корзина" class="basket_ico" width="15" height="15">
+          <a href="" class="cart_ico">КОРЗИНА</a>
+        </div>
       </div>
     </header>
 <!--конец-->
@@ -38,12 +33,11 @@
       <div class="presets_txt">
         <h1>Магазин готовых шаблонов</h1>
       </div>
-
 <!--ПАРАМЕТРЫ ШАБЛОНОВ (слева)-->
       <section class="parametrs">
         <h2 class="visually-hidden">Параметры товаров</h2>
 <!--==ФОРМА============-->
-        <form action="" type="post">
+        <form action="" type="post" class="form_presets">
           <div class="parametrs_coast">
             <p>СТОИМОСТЬ:</p>
             <input type="range" min="0" max="25000" step="1000" value="5000">
@@ -119,8 +113,8 @@
             <img src="img\img-sedona-jpg.png" alt="Sedona" width="360" height="576">
           </a>
           <div class="hidden_prod_inf">
-            <p>Sedona</p>
-            <p>Информационный сайт 
+            <p class="prod_name">Sedona</p>
+            <p class="prod_description">Информационный сайт 
               для туристов</p>
             <button type="button" name="sedona" id="sedona_prod" class="sedona">9 900 РУБ.</button>
           </div>
@@ -132,8 +126,8 @@
             <img src="img\img-pink-jpg.png" alt="Pink" width="360" height="576">
           </a>
           <div class="hidden_prod_inf">
-            <p>Pink App</p>
-            <p>Продуктовый лендинг
+            <p class="prod_name">Pink App</p>
+            <p class="prod_description">Продуктовый лендинг
               приложения для iOS и Android</p>
             <button type="button" name="pinkapp" id="pinkapp_prod" class="pinkapp">9 900 РУБ.</button>
           </div>        
@@ -145,8 +139,8 @@
             <img src="img\img-barbershop-jpg.png" alt="Barbershop" width="360" height="576">
           </a>
           <div class="hidden_prod_inf">
-            <p>Barbershop</p>
-            <p>Сайт салона красоты. <br>
+            <p class="prod_name">Barbershop</p>
+            <p class="prod_description">Сайт салона красоты. <br>
               Для мужчин, да.</p>
             <button type="button" name="barber" id="barber_prod" class="barber">9 900 РУБ.</button>
           </div>        
@@ -158,8 +152,8 @@
             <img src="img\img-mishka-jpg.png" alt="Mishka" width="360" height="576">
           </a>
           <div class="hidden_prod_inf">
-            <p>MISHKA</p>
-            <p>Интернет-магазин 
+            <p class="prod_name">MISHKA</p>
+            <p class="prod_description">Интернет-магазин 
               вязаных игрушек</p>
             <button type="button" name="mishka" id="mishka_prod" class="mishka">9 900 РУБ.</button>
           </div>
@@ -171,8 +165,8 @@
             <img src="img\img-aplus-jpg.png" alt="Aplus" width="360" height="576">
           </a>
           <div class="hidden_prod_inf">
-            <p>A Plus</p>
-            <p>Лендинг курсов повышения квалификации</p>
+            <p class="prod_name">A Plus</p>
+            <p class="prod_description">Лендинг курсов повышения квалификации</p>
             <button type="button" name="aplus" id="aplus_prod" class="aplus">9 900 РУБ.</button>
           </div>
         </div>
@@ -183,8 +177,8 @@
             <img src="img\img-kvast-jpg.png" alt="Kvast" width="360" height="576">
           </a>
           <div class="hidden_prod_inf">
-            <p>КВАСТ</p>
-            <p>Промо-сайт производителя
+            <p class="prod_name">КВАСТ</p>
+            <p class="prod_description">Промо-сайт производителя
               крафтового кваса</p>
             <button type="button" name="kvast" id="kvast_prod" class="kvast">9 900 РУБ.</button>
           </div>
@@ -197,7 +191,7 @@
       <div class="adress">
         <p class="contact_name">NЁRDS DESIGN STUDIO</p>
         <P class="contact_adress">191186, Санкт-Петербург,<br>
-                                  ул. Б. Конюшенная, д. 19/8 
+        ул. Б. Конюшенная, д. 19/8 
         <br>
         <br>
         тел. +7 (812) 275-75-75</P>
@@ -206,18 +200,12 @@
         <div class="visually-hidden">
           <p>Напишите нам</p>
           <form action="" type="post">
-            <label for="name">Ваше имя:</label>
-            <br>
-            <input type="text" name="your_name" id="name">
-            <br>
-            <label for="mail">Ваш e-mail:</label>
-            <br>
-            <input type="text" name="your_mail" id="mail">
-            <br>
-            <label for="message">Текст письма:</label>
-            <br>
-            <textarea name="your_message" id="message" cols="" rows=""></textarea>
-            <br>
+            <label for="name">Ваше имя:</label><br>
+            <input type="text" name="your_name" id="name" placeholder="Иван"><br>
+            <label for="mail">Ваш e-mail:</label><br>
+            <input type="text" name="your_mail" id="mail" placeholder="exemple@ya.ru"><br>
+            <label for="message">Текст письма:</label><br>
+            <textarea name="your_message" id="message" cols="" rows=""></textarea><br>
             <input type="submit" name="get" id="get_btn" value="ОТПРАВИТЬ">
           </form>
         </div>
@@ -226,22 +214,11 @@
 
 <!--FOOTER иконки соц.сети-->
     <footer>      
-      <a href="" class="socisl_link_vk">
-        <div class="social_list">
-          <div class="vk"></div>
-        </div>
-      </a>
-      <a href="" class="social_link_fb">
-        <div class="social_list">
-          <div class="fb"></div>
-        </div>
-      </a>
-      <a href="" class="social_link_instagram">
-        <div class="social_list">
-          <div class="insta"></div>
-        </div>
-      </a>
-  
+      <div class="social">
+        <a href="" class="socisl_link_vk"><div class="social_list"><div class="vk"></div></div></a>
+        <a href="" class="social_link_fb"><div class="social_list"><div class="fb"></div></div></a>
+        <a href="" class="social_link_instagram"><div class="social_list"><div class="insta"></div></div></a> 
+      </div> 
       <div class="footer_txt">
         <p class="footer_txt_header">Давайте дружить, это выгодно!</p>
         <p class="footer_txt_p">Скидка 10% для друзей из социальныхсетей.</p>

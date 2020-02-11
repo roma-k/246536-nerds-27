@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/normalise.css">
-    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
 <!--Верхняя панель ХЕЙДЕР-->
     <header>
       <div class="head_up">
-        <img src="img/nerds-logo.svg" class="nerds_logo" alt="Nerds" width="160" height="65">
+        <a href="#"><img src="img/nerds-logo.svg" class="nerds_logo" alt="Nerds" width="160" height="65"></a>
         <nav class="site_nav">
           <ul class="nav_list">
             <li class="nav_item"><a href="">СТУДИЯ</a></li>
@@ -36,22 +36,25 @@
               сайта или мобильного приложения.</p>
               <a href="" class="slider_red_button">УЗНАТЬ БОЛЬШЕ</a>
             </div>
+            <img src="img/slide-picture.png" alt="Изображение1" width="698" height="413">
           </li>
-          <li class="slide2">
+          <li class="slide2 visually-hidden">
             <div class="slider_text_container2">
               <p class="kontent_header">Любим математику как никто другой</p>
               <p class="kontent_text">Никакого креатива, только
               математические формулы  для расчета идеальных пропорций.</p>
               <a href="" class="slider_red_button">УЗНАТЬ БОЛЬШЕ</a>
             </div>
+            <img src="img/slide2.png" alt="Изображение2" width="663" height="430">
           </li>
-          <li class="slide3">
+          <li class="slide3 visually-hidden">
             <div class="slider_text_container3">
               <p class="kontent_header">Только ночь, только хардкор</p>
               <p class="kontent_text">Работать днем, как все?
                Мы против этого. Ближе к полуночи работа только начинается.</p>
               <a href="" class="slider_red_button">УЗНАТЬ БОЛЬШЕ</a>
             </div>
+            <img src="img/slide3.png" alt="Изображение3" width="759" height="411">
           </li>
         </ul>
       </div>
@@ -86,6 +89,7 @@
           </li>
         </ul>
       </section>
+      <hr>
 <!--О КОМПАНИИ (СЛЕВА)-->
       <section class="about">
         <div class="about_left">
@@ -161,9 +165,9 @@
           <p>Напишите нам</p>
           <form action="" type="post">
             <label for="name">Ваше имя:</label><br>
-            <input type="text" name="your_name" id="name"><br>
+            <input type="text" name="your_name" id="name" placeholder="Иван"><br>
             <label for="mail">Ваш e-mail:</label><br>
-            <input type="text" name="your_mail" id="mail"><br>
+            <input type="text" name="your_mail" id="mail" placeholder="exemple@ya.ru"><br>
             <label for="message">Текст письма:</label><br>
             <textarea name="your_message" id="message" cols="" rows=""></textarea><br>
             <input type="submit" name="get" id="get_btn" value="ОТПРАВИТЬ">
@@ -174,9 +178,11 @@
 
 <!--FOOTER иконки соц.сети-->
     <footer>      
-      <a href="" class="socisl_link_vk"><div class="social_list"><div class="vk"></div></div></a>
-      <a href="" class="social_link_fb"><div class="social_list"><div class="fb"></div></div></a>
-      <a href="" class="social_link_instagram"><div class="social_list"><div class="insta"></div></div></a>  
+      <div class="social">
+        <a href="" class="socisl_link_vk"><div class="social_list"><div class="vk"></div></div></a>
+        <a href="" class="social_link_fb"><div class="social_list"><div class="fb"></div></div></a>
+        <a href="" class="social_link_instagram"><div class="social_list"><div class="insta"></div></div></a> 
+      </div> 
       <div class="footer_txt">
         <p class="footer_txt_header">Давайте дружить, это выгодно!</p>
         <p class="footer_txt_p">Скидка 10% для друзей из социальныхсетей.</p>
