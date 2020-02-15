@@ -30,17 +30,18 @@ header {
   line-height: 30px;
   font-size: 16px;
   color: black;
-  justify-content: space-between;
 }
 
 .nerds_logo {
-  display: flex;
+  display: inline;
   margin-top: 49px;
+  padding-right: 202px;
 }
 
 .site_nav {
   display: inline-flex;
   margin-top: 49px;
+  margin-right: 245px;
   align-items: center;
 }
 
@@ -103,10 +104,10 @@ header {
 }
 
 .slider_text_container {
-  display: flex;
+  display: inline-block;
+  justify-content: start;
   width: 380px;
   padding-top: 67px;
-  padding-bottom: 80px;
 }
 
 .slider_text_container2 {
@@ -124,8 +125,7 @@ header {
 }
 
 .kontent_header {
-  margin: 0;
-  margin-bottom: 28px;
+  margin: 0 0 28px;
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
@@ -144,6 +144,7 @@ header {
 
 .slide1 {
   display: flex;
+  justify-content: space-between;
 }
 
 .slide2 {
@@ -154,17 +155,12 @@ header {
   display: flex;
 }
 
-.slide1 .kontent_text {
-  width: 361px;
-}
-
 .slide2 .kontent_text {
   width: 402px;
 }
 
 .kontent_text {
-  margin: 0;
-  margin-bottom: 42px;
+  margin: 0 0 42px;
   padding-top: 28px;
 }
 
@@ -244,8 +240,7 @@ header {
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
-  margin: 0;
-  margin-bottom: 28px;
+  margin: 0 0 28px;
 }
 
 /*О КОМПАНИИ (СПРАВА), КАРТИНКА, СТАТИСТИКА*/
@@ -315,6 +310,7 @@ header {
   font-size: 16px;
   line-height: 18px;
   font-weight: normal;
+  color: #666666;
 }
 
 .map {
@@ -356,9 +352,7 @@ header {
 .fb {
   width: 75px;
   height: 75px;
-  background: url("../img/fb-icon.PNG");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("../img/fb-icon.PNG") no-repeat center;
 }
 
 .fb:active {
@@ -613,6 +607,13 @@ header {
   text-transform: uppercase;
 }
 
+.parametrs label {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  color: #283136;
+}
+
 .prod_name {
   font-size: 18px;
   line-height: 30px;
@@ -634,9 +635,9 @@ header {
   background: #eeeeee;
   border: 0;
   color: black;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 18px;
-  font-weight: bold;
+  font-weight: 500;
   border-radius: 3px;
 }
 
@@ -647,9 +648,9 @@ header {
   background: #dfdfdf;
   border: 0;
   color: black;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 18px;
-  font-weight: bold;
+  font-weight: 500;
   border-radius: 3px;
 }
 
@@ -659,11 +660,30 @@ header {
   background: #d5d5d5;
   border: 0;
   color: rgba(0, 0, 0, 0.3);
-  font-size: 17px;
+  font-size: 16px;
   line-height: 18px;
-  font-weight: bold;
+  font-weight: 500;
   border-top: 3px solid rgba(0, 0, 0, 0.3);
   border-radius: 3px;
+}
+
+.sort_txt {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.sort_no_active {
+  opacity: 0.3;
+}
+
+.sort_form a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  color: black;
 }
 
 .visually-hidden {
