@@ -30,11 +30,12 @@
       <div class="presets_txt">
         <h1>Магазин готовых шаблонов</h1>
       </div>
+      <div class="content_store">
       <section class="parametrs">
         <h2 class="visually-hidden">Параметры товаров</h2>
         <form action="" type="post" class="form_presets">
           <div class="parametrs_coast">
-            <p>Стоимость:</p>
+            <p class="coast_header">Стоимость:</p>
             <input type="range" min="0" max="25000" step="1000" value="5000">
             <br>
             <input type="text" name="coast_min" id="coast_min_id" size="5">
@@ -90,24 +91,26 @@
 <!--Изобр. шаблонов справа, сортировка-->
       <section class="product_prev">
   <!--====ФОРМА СОРТИРОВКИ====-->
+        <div class="sort">
         <div class="sort_txt">
           <p>Сортировать:</p>
         </div>
         <div class="sort_form">
           <a href="#" class="cost_sort">по цене</a>
           <a href="#" class="type_sort sort_no_active">по типу</a>
-            <a href="#" class="name_sort sort_no_active">по названию</a>
-              <a href="#" class="sort_down">v</a>
-                <a href="#" class="sort_up sort_no_active">^</a>
+          <a href="#" class="name_sort sort_no_active">по названию</a>
+          <a href="#" class="sort_down">v</a>
+          <a href="#" class="sort_up sort_no_active">^</a>
+        </div>
         </div>
         <h2 class="visually-hidden">Результаты поиска</h2>
-  <!-- Изображения товаров-->
-<!--1--><div class="product">
+        <div class="product_info">
+<!--1--><div class="product_item">
           <img src="img/browser.png" alt="browser" width="360" height="40" class="browser_img">
           <a href="">
             <img src="img/img-sedona-jpg.png" alt="Sedona" width="360" height="576">
           </a>
-          <div class="hidden_prod_inf">
+          <div class="hidden_prod_inf visually-hidden">
             <p class="prod_name">Sedona</p>
             <p class="prod_description">Информационный сайт
               для туристов</p>
@@ -115,25 +118,24 @@
           </div>
         </div>
 
-<!--2--><div class="product">
+<!--2--><div class="product_item">
           <img src="img/browser.png" alt="browser" width="360" height="40" class="browser_img">
           <a href="">
             <img src="img/img-pink-jpg.png" alt="Pink" width="360" height="576">
           </a>
-          <div class="hidden_prod_inf">
+          <div class="hidden_prod_inf visually-hidden">
             <p class="prod_name">Pink App</p>
             <p class="prod_description">Продуктовый лендинг
               приложения для iOS и Android</p>
             <button type="button" name="pinkapp" id="pinkapp_prod" class="pinkapp">9 900 РУБ.</button>
           </div>
         </div>
-
-<!--3--><div class="product">
+<!--3--><div class="product_item">
           <img src="img/browser.png" alt="browser" width="360" height="40" class="browser_img">
           <a href="">
             <img src="img/img-barbershop-jpg.png" alt="Barbershop" width="360" height="576">
           </a>
-          <div class="hidden_prod_inf">
+          <div class="hidden_prod_inf visually-hidden">
             <p class="prod_name">Barbershop</p>
             <p class="prod_description">Сайт салона красоты. <br>
               Для мужчин, да.</p>
@@ -141,44 +143,45 @@
           </div>
         </div>
 
-<!--4--><div class="product">
+<!--4--><div class="product_item">
           <img src="img/browser.png" alt="browser" width="360" height="40" class="browser_img">
           <a href="">
             <img src="img/img-mishka-jpg.png" alt="Mishka" width="360" height="576">
           </a>
-          <div class="hidden_prod_inf">
+          <div class="hidden_prod_inf visually-hidden">
             <p class="prod_name">Mishka</p>
             <p class="prod_description">Интернет-магазин
               вязаных игрушек</p>
             <button type="button" name="mishka" id="mishka_prod" class="mishka">9 900 РУБ.</button>
           </div>
         </div>
-
-<!--5--><div class="product">
+<!--5--><div class="product_item">
           <img src="img/browser.png" alt="browser" width="360" height="40" class="browser_img">
           <a href="">
             <img src="img/img-aplus-jpg.png" alt="Aplus" width="360" height="576">
           </a>
-          <div class="hidden_prod_inf">
+          <div class="hidden_prod_inf visually-hidden">
             <p class="prod_name">A Plus</p>
             <p class="prod_description">Лендинг курсов повышения квалификации</p>
             <button type="button" name="aplus" id="aplus_prod" class="aplus">9 900 РУБ.</button>
           </div>
         </div>
 
-<!--6--><div class="product">
+<!--6--><div class="product_item">
           <img src="img/browser.png" alt="browser" width="360" height="40" class="browser_img">
           <a href="">
             <img src="img/img-kvast-jpg.png" alt="Kvast" width="360" height="576">
           </a>
-          <div class="hidden_prod_inf">
+          <div class="hidden_prod_inf visually-hidden">
             <p class="prod_name">Кваст</p>
             <p class="prod_description">Промо-сайт производителя
               крафтового кваса</p>
             <button type="button" name="kvast" id="kvast_prod" class="kvast">9 900 РУБ.</button>
           </div>
         </div>
+        </div>
       </section>
+      </div>
     </main>
 <!--Карта фоном + форма для связи-->
     <section class="map">
@@ -208,16 +211,30 @@
     </section>
 
 <!--FOOTER иконки соц.сети-->
-    <footer>
-      <div class="social">
-        <a href="" class="social_link_vk"><div class="social_list"><div class="vk"></div></div></a>
-        <a href="" class="social_link_fb"><div class="social_list"><div class="fb"></div></div></a>
-        <a href="" class="social_link_instagram"><div class="social_list"><div class="insta"></div></div></a>
-      </div>
-      <div class="footer_txt">
-        <p class="footer_txt_header">Давайте дружить, это выгодно!</p>
-        <p class="footer_txt_p">Скидка 10% для друзей из социальныхсетей.</p>
-      </div>
-    </footer>
+<footer>
+  <div class="footer_kontent">
+    <div class="social">
+      <a href="" class="socisl_link_vk">
+        <div class="social_list">
+          <div class="vk"></div>
+        </div>
+      </a>
+      <a href="" class="social_link_fb">
+        <div class="social_list">
+          <div class="fb"></div>
+        </div>
+      </a>
+      <a href="" class="social_link_instagram">
+        <div class="social_list">
+          <div class="insta"></div>
+        </div>
+      </a>
+    </div>
+    <div class="footer_txt">
+      <p class="footer_txt_header">Давайте дружить, это выгодно!</p>
+      <p class="footer_txt_p">Скидка 10% для друзей из социальныхсетей.</p>
+    </div>
+  </div>
+</footer>
   </body>
 </html>
