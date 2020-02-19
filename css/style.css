@@ -252,6 +252,7 @@ header {
   font-size: 16px;
   line-height: 24px;
 }
+
 .kontent_text_bold {
   color: black;
   font-size: 16px;
@@ -327,7 +328,7 @@ header {
   margin: 0;
 }
 
-.partners_list{
+.partners_list {
   display: flex;
   width: 1160px;
   margin-top: 49px;

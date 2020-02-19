@@ -1,97 +1,98 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic-ext"
+        rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>HTML Academy: Нёрдс</title>
+</head>
+<body>
 <!--Верхняя панель ХЕЙДЕР-->
-    <header>
-      <div class="head_up">
-        <a href="index.html"><img src="img/nerds-logo.svg" class="nerds_logo" alt="Nerds" width="160" height="65"></a>
-        <nav class="site_nav">
-          <ul class="nav_list">
-            <li class="nav_item"><a href="">Студия</a></li>
-            <li class="nav_item"><a href="">Клиенты</a></li>
-            <li class="nav_item nav_active">Магазин</li>
-            <li class="nav_item"><a href="">Контакты</a></li>
-          </ul>
-        </nav>
-        <div class="cart nav_item">
-          <img src="img/basket-icon.png" alt="Корзина" class="basket_ico" width="15" height="15">
-          <a href="" class="cart_ico">Корзина</a>
+<header>
+  <div class="head_up">
+    <a href="index.html"><img src="img/nerds-logo.svg" class="nerds_logo" alt="Nerds" width="160" height="65"></a>
+    <nav class="site_nav">
+      <ul class="nav_list">
+        <li class="nav_item"><a href="">Студия</a></li>
+        <li class="nav_item"><a href="">Клиенты</a></li>
+        <li class="nav_item nav_active">Магазин</li>
+        <li class="nav_item"><a href="">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="cart nav_item">
+      <img src="img/basket-icon.png" alt="Корзина" class="basket_ico" width="15" height="15">
+      <a href="" class="cart_ico">Корзина</a>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="presets_txt">
+    <h1>Магазин готовых шаблонов</h1>
+  </div>
+  <div class="content_store">
+    <section class="parametrs">
+      <h2 class="visually-hidden">Параметры товаров</h2>
+      <form action="" type="post" class="form_presets">
+        <div class="parametrs_coast">
+          <p class="coast_header">Стоимость:</p>
+          <input type="range" min="0" max="25000" step="1000" value="5000">
+          <br>
+          <input type="text" name="coast_min" id="coast_min_id" size="5">
+          <input type="text" name="coast_max" id="coast_max_id" size="5">
         </div>
-      </div>
-    </header>
-    <main>
-      <div class="presets_txt">
-        <h1>Магазин готовых шаблонов</h1>
-      </div>
-      <div class="content_store">
-      <section class="parametrs">
-        <h2 class="visually-hidden">Параметры товаров</h2>
-        <form action="" type="post" class="form_presets">
-          <div class="parametrs_coast">
-            <p class="coast_header">Стоимость:</p>
-            <input type="range" min="0" max="25000" step="1000" value="5000">
-            <br>
-            <input type="text" name="coast_min" id="coast_min_id" size="5">
-            <input type="text" name="coast_max" id="coast_max_id" size="5">
-          </div>
-          <div class="parametrs_web">
-            <p class="grid">Сетка:</p>
-            <label for="adapt_id">
-              <input type="radio" name="grid" id="adapt_id" value="adapt" checked>
-              Адаптивная
-            </label>
-            <br>
-            <label for="fixed_id">
-              <input type="radio" name="grid" id="fixed_id" value="fixed">
-              Фиксированная
-            </label>
-            <br>
-            <label for="strach_id">
-              <input type="radio" name="grid" id="strach_id" value="strach">
-              Резиновая
-            </label>
-          </div>
-          <div class="parametrs_option">
-            <p class="features">Особенности:</p>
-            <label for="slider_id">
-              <input type="checkbox" name="slider" id="slider_id" checked>
-              Слайдер
-            </label>
-            <br>
-            <label for="advantage_id">
-              <input type="checkbox" name="advantage" id="advantage_id">
-              Блок преимуществ
-            </label>
-            <br>
-            <label for="news_id">
-              <input type="checkbox" name="news" id="news_id">
-              Новости
-            </label>
-            <br>
-            <label for="gelery_id">
-              <input type="checkbox" name="galery" id="gelery_id">
-              Галерея
-            </label>
-            <br>
-            <label for="cart_id">
-              <input type="checkbox" name="cart" id="cart_id">
-              Корзина
-            </label>
-          </div>
-          <input type="submit" name="search_product" class="search_bttn" id="search_id" value="ПОКАЗАТЬ">
-        </form>
-      </section>
-<!--Изобр. шаблонов справа, сортировка-->
-      <section class="product_prev">
-  <!--====ФОРМА СОРТИРОВКИ====-->
-        <div class="sort">
+        <div class="parametrs_web">
+          <p class="grid">Сетка:</p>
+          <label for="adapt_id">
+            <input type="radio" name="grid" id="adapt_id" value="adapt" checked>
+            Адаптивная
+          </label>
+          <br>
+          <label for="fixed_id">
+            <input type="radio" name="grid" id="fixed_id" value="fixed">
+            Фиксированная
+          </label>
+          <br>
+          <label for="strach_id">
+            <input type="radio" name="grid" id="strach_id" value="strach">
+            Резиновая
+          </label>
+        </div>
+        <div class="parametrs_option">
+          <p class="features">Особенности:</p>
+          <label for="slider_id">
+            <input type="checkbox" name="slider" id="slider_id" checked>
+            Слайдер
+          </label>
+          <br>
+          <label for="advantage_id">
+            <input type="checkbox" name="advantage" id="advantage_id">
+            Блок преимуществ
+          </label>
+          <br>
+          <label for="news_id">
+            <input type="checkbox" name="news" id="news_id">
+            Новости
+          </label>
+          <br>
+          <label for="gelery_id">
+            <input type="checkbox" name="galery" id="gelery_id">
+            Галерея
+          </label>
+          <br>
+          <label for="cart_id">
+            <input type="checkbox" name="cart" id="cart_id">
+            Корзина
+          </label>
+        </div>
+        <input type="submit" name="search_product" class="search_bttn" id="search_id" value="ПОКАЗАТЬ">
+      </form>
+    </section>
+    <!--Изобр. шаблонов справа, сортировка-->
+    <section class="product_prev">
+      <!--====ФОРМА СОРТИРОВКИ====-->
+      <div class="sort">
         <div class="sort_txt">
           <p>Сортировать:</p>
         </div>
@@ -102,10 +103,11 @@
           <a href="#" class="sort_down">v</a>
           <a href="#" class="sort_up sort_no_active">^</a>
         </div>
-        </div>
-        <h2 class="visually-hidden">Результаты поиска</h2>
-        <div class="product_info">
-<!--1--><div class="product_item">
+      </div>
+      <h2 class="visually-hidden">Результаты поиска</h2>
+      <div class="product_info">
+        <!--1-->
+        <div class="product_item">
           <img src="img/browser.png" alt="browser" width="360" height="40" class="browser_img">
           <a href="">
             <img src="img/img-sedona-jpg.png" alt="Sedona" width="360" height="576">
@@ -118,7 +120,8 @@
           </div>
         </div>
 
-<!--2--><div class="product_item">
+        <!--2-->
+        <div class="product_item">
           <img src="img/browser.png" alt="browser" width="360" height="40" class="browser_img">
           <a href="">
             <img src="img/img-pink-jpg.png" alt="Pink" width="360" height="576">
@@ -130,7 +133,8 @@
             <button type="button" name="pinkapp" id="pinkapp_prod" class="pinkapp">9 900 РУБ.</button>
           </div>
         </div>
-<!--3--><div class="product_item">
+        <!--3-->
+        <div class="product_item">
           <img src="img/browser.png" alt="browser" width="360" height="40" class="browser_img">
           <a href="">
             <img src="img/img-barbershop-jpg.png" alt="Barbershop" width="360" height="576">
@@ -143,7 +147,8 @@
           </div>
         </div>
 
-<!--4--><div class="product_item">
+        <!--4-->
+        <div class="product_item">
           <img src="img/browser.png" alt="browser" width="360" height="40" class="browser_img">
           <a href="">
             <img src="img/img-mishka-jpg.png" alt="Mishka" width="360" height="576">
@@ -155,7 +160,8 @@
             <button type="button" name="mishka" id="mishka_prod" class="mishka">9 900 РУБ.</button>
           </div>
         </div>
-<!--5--><div class="product_item">
+        <!--5-->
+        <div class="product_item">
           <img src="img/browser.png" alt="browser" width="360" height="40" class="browser_img">
           <a href="">
             <img src="img/img-aplus-jpg.png" alt="Aplus" width="360" height="576">
@@ -167,7 +173,8 @@
           </div>
         </div>
 
-<!--6--><div class="product_item">
+        <!--6-->
+        <div class="product_item">
           <img src="img/browser.png" alt="browser" width="360" height="40" class="browser_img">
           <a href="">
             <img src="img/img-kvast-jpg.png" alt="Kvast" width="360" height="576">
@@ -179,36 +186,36 @@
             <button type="button" name="kvast" id="kvast_prod" class="kvast">9 900 РУБ.</button>
           </div>
         </div>
-        </div>
-      </section>
-      </div>
-    </main>
-<!--Карта фоном + форма для связи-->
-    <section class="map">
-      <h2 class="visually-hidden">Обратная связь</h2>
-      <div class="adress">
-        <p class="contact_name">Nёrds design studio</p>
-        <p class="contact_adress">191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8
-          <br>
-          <br>
-            тел. +7 (812) 275-75-75</p>
-        <button type="button" name="scribe" class="contact_red_button">напишите нам</button>
-<!--ФОРМА ОТПРАВКИ ПИСЬМА-->
-        <div class="visually-hidden">
-          <p>Напишите нам</p>
-          <form action="" type="post">
-            <label for="name">Ваше имя:</label><br>
-            <input type="text" name="your_name" id="name" placeholder="Иван"><br>
-            <label for="mail">Ваш e-mail:</label><br>
-            <input type="text" name="your_mail" id="mail" placeholder="exemple@ya.ru"><br>
-            <label for="message">Текст письма:</label><br>
-            <textarea name="your_message" id="message" cols="" rows=""></textarea><br>
-            <input type="submit" name="get" id="get_btn" value="ОТПРАВИТЬ">
-          </form>
-        </div>
       </div>
     </section>
+  </div>
+</main>
+<!--Карта фоном + форма для связи-->
+<section class="map">
+  <h2 class="visually-hidden">Обратная связь</h2>
+  <div class="adress">
+    <p class="contact_name">Nёrds design studio</p>
+    <p class="contact_adress">191186, Санкт-Петербург,<br>
+      ул. Б. Конюшенная, д. 19/8
+      <br>
+      <br>
+      тел. +7 (812) 275-75-75</p>
+    <button type="button" name="scribe" class="contact_red_button">напишите нам</button>
+    <!--ФОРМА ОТПРАВКИ ПИСЬМА-->
+    <div class="visually-hidden">
+      <p>Напишите нам</p>
+      <form action="" type="post">
+        <label for="name">Ваше имя:</label><br>
+        <input type="text" name="your_name" id="name" placeholder="Иван"><br>
+        <label for="mail">Ваш e-mail:</label><br>
+        <input type="text" name="your_mail" id="mail" placeholder="exemple@ya.ru"><br>
+        <label for="message">Текст письма:</label><br>
+        <textarea name="your_message" id="message" cols="" rows=""></textarea><br>
+        <input type="submit" name="get" id="get_btn" value="ОТПРАВИТЬ">
+      </form>
+    </div>
+  </div>
+</section>
 
 <!--FOOTER иконки соц.сети-->
 <footer>
@@ -236,5 +243,5 @@
     </div>
   </div>
 </footer>
-  </body>
+</body>
 </html>
