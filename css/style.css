@@ -229,6 +229,13 @@ header {
   padding-top: 80px;
 }
 
+.about_left ul {
+  display: flex;
+  flex-direction: column;
+  min-height: 110px;
+  justify-content: space-between;
+}
+
 .about_right {
   display: flex;
   width: 360px;
@@ -722,9 +729,59 @@ header {
   margin: 0;
 }
 
+.block_coast_scroll {
+  display: flex;
+  width: 261px;
+  min-height: 81px;
+  justify-content: center;
+  justify-items: center;
+  margin-bottom: 13px;
+  background: #eeeeee;
+}
+
+.block_coast_num {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 62px;
+}
+
+.coast_txt {
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #283136;
+}
+
 .coast_header {
   margin-top: 0;
   margin-bottom: 56px;
+}
+
+.grid {
+  margin: 0;
+  margin-bottom: 21px;
+}
+
+.grid_radio {
+  display: flex;
+  flex-direction: column;
+  min-height: 105px;
+  justify-content: space-between;
+  margin-bottom: 51px;
+}
+
+.features {
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+.features_chekbox {
+  display: flex;
+  flex-direction: column;
+  min-height: 185px;
+  margin-bottom: 48px;
+
+
 }
 
 .parametrs p {

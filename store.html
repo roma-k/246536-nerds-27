@@ -37,54 +37,65 @@
       <form action="" type="post" class="form_presets">
         <div class="parametrs_coast">
           <p class="coast_header">Стоимость:</p>
-          <input type="range" min="0" max="25000" step="1000" value="5000">
-          <br>
-          <input type="text" name="coast_min" id="coast_min_id" size="5">
-          <input type="text" name="coast_max" id="coast_max_id" size="5">
+          <div class="block_coast_scroll">
+            <input type="range" min="0" max="25000" step="1000" value="5000">
+          </div>
+          <div class="block_coast_num">
+            <label for="coast_min_id" class="coast_txt">от
+              <input type="text" name="coast_min" id="coast_min_id" size="5" placeholder="0">
+            </label>
+            <label for="coast_max_id" class="coast_txt">до
+              <input type="text" name="coast_max" id="coast_max_id" size="5" placeholder="15 000">
+            </label>
+          </div>
         </div>
         <div class="parametrs_web">
           <p class="grid">Сетка:</p>
-          <label for="adapt_id">
-            <input type="radio" name="grid" id="adapt_id" value="adapt" checked>
-            Адаптивная
-          </label>
-          <br>
-          <label for="fixed_id">
-            <input type="radio" name="grid" id="fixed_id" value="fixed">
-            Фиксированная
-          </label>
-          <br>
-          <label for="strach_id">
-            <input type="radio" name="grid" id="strach_id" value="strach">
-            Резиновая
-          </label>
+          <div class="grid_radio">
+            <label for="adapt_id">
+              <input type="radio" name="grid" id="adapt_id" value="adapt" checked>
+              Адаптивная
+            </label>
+            <br>
+            <label for="fixed_id">
+              <input type="radio" name="grid" id="fixed_id" value="fixed">
+              Фиксированная
+            </label>
+            <br>
+            <label for="strach_id">
+              <input type="radio" name="grid" id="strach_id" value="strach">
+              Резиновая
+            </label>
+          </div>
         </div>
         <div class="parametrs_option">
           <p class="features">Особенности:</p>
-          <label for="slider_id">
-            <input type="checkbox" name="slider" id="slider_id" checked>
-            Слайдер
-          </label>
-          <br>
-          <label for="advantage_id">
-            <input type="checkbox" name="advantage" id="advantage_id">
-            Блок преимуществ
-          </label>
-          <br>
-          <label for="news_id">
-            <input type="checkbox" name="news" id="news_id">
-            Новости
-          </label>
-          <br>
-          <label for="gelery_id">
-            <input type="checkbox" name="galery" id="gelery_id">
-            Галерея
-          </label>
-          <br>
-          <label for="cart_id">
-            <input type="checkbox" name="cart" id="cart_id">
-            Корзина
-          </label>
+          <div class="features_chekbox">
+            <label for="slider_id">
+              <input type="checkbox" name="slider" id="slider_id" checked>
+              Слайдер
+            </label>
+            <br>
+            <label for="advantage_id">
+              <input type="checkbox" name="advantage" id="advantage_id">
+              Блок преимуществ
+            </label>
+            <br>
+            <label for="news_id">
+              <input type="checkbox" name="news" id="news_id">
+              Новости
+            </label>
+            <br>
+            <label for="gelery_id">
+              <input type="checkbox" name="galery" id="gelery_id">
+              Галерея
+            </label>
+            <br>
+            <label for="cart_id">
+              <input type="checkbox" name="cart" id="cart_id">
+              Корзина
+            </label>
+          </div>
         </div>
         <input type="submit" name="search_product" class="search_bttn" id="search_id" value="ПОКАЗАТЬ">
       </form>
