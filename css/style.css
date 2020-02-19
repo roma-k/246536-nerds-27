@@ -459,7 +459,7 @@ header {
 .fb {
   width: 75px;
   height: 75px;
-  background: url("../img/fb-icon.PNG") no-repeat center;
+  background: url("../img/fb-icon.png") no-repeat center;
 }
 
 .fb:active {
@@ -481,7 +481,7 @@ header {
 .insta {
   width: 75px;
   height: 75px;
-  background-image: url("../img/insta-icon.PNG");
+  background-image: url("../img/insta-icon.png");
   background-repeat: no-repeat;
   background-position: center;
 }
