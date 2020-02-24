@@ -39,28 +39,29 @@
           </div>
           <div class="block-coast-num">
             <label for="coast_min_id" class="coast-txt">от
-              <input type="text" name="coast_min" id="coast_min_id" size="5" placeholder="0">
+              <input type="text" name="coast_min" id="coast_min_id" size="5" placeholder="0" class="coast-min-max">
             </label>
             <label for="coast_max_id" class="coast-txt">до
-              <input type="text" name="coast_max" id="coast_max_id" size="5" placeholder="15 000">
+              <input type="text" name="coast_max" id="coast_max_id" size="5" placeholder="15 000" class="coast-min-max">
             </label>
           </div>
         </div>
         <div class="parametrs-web">
           <p class="grid">Сетка:</p>
           <div class="grid-radio">
+            <input type="radio" name="grid" id="adapt_id" value="adapt" checked>
             <label for="adapt_id">
-              <input type="radio" name="grid" id="adapt_id" value="adapt" checked>
+              <span></span>
               Адаптивная
             </label>
-            <br>
+            <input type="radio" name="grid" id="fixed_id" value="fixed">
             <label for="fixed_id">
-              <input type="radio" name="grid" id="fixed_id" value="fixed">
+              <span></span>
               Фиксированная
             </label>
-            <br>
+            <input type="radio" name="grid" id="strach_id" value="strach">
             <label for="strach_id">
-              <input type="radio" name="grid" id="strach_id" value="strach">
+              <span></span>
               Резиновая
             </label>
           </div>
@@ -68,28 +69,29 @@
         <div class="parametrs-option">
           <p class="features">Особенности:</p>
           <div class="features-chekbox">
-            <label for="slider_id">
               <input type="checkbox" name="slider" id="slider_id" checked>
+            <label for="slider_id">
+              <span></span>
               Слайдер
             </label>
-            <br>
-            <label for="advantage_id">
               <input type="checkbox" name="advantage" id="advantage_id">
+            <label for="advantage_id">
+              <span></span>
               Блок преимуществ
             </label>
-            <br>
-            <label for="news_id">
               <input type="checkbox" name="news" id="news_id">
+            <label for="news_id">
+              <span></span>
               Новости
             </label>
-            <br>
-            <label for="gelery_id">
               <input type="checkbox" name="galery" id="gelery_id">
+            <label for="gelery_id">
+              <span></span>
               Галерея
             </label>
-            <br>
-            <label for="cart_id">
               <input type="checkbox" name="cart" id="cart_id">
+            <label for="cart_id">
+              <span></span>
               Корзина
             </label>
           </div>
@@ -105,11 +107,11 @@
           <p>Сортировать:</p>
         </div>
         <div class="sort-form">
-          <a href="#" class="cost-sort">по цене</a>
-          <a href="#" class="type-sort sort-no-active">по типу</a>
-          <a href="#" class="name-sort sort-no-active">по названию</a>
-          <a href="#" class="sort-down">v</a>
-          <a href="#" class="sort-up sort-no-active">^</a>
+          <a href="#" class="sort-result sort-active">по цене</a>
+          <a href="#" class="sort-result">по типу</a>
+          <a href="#" class="sort-result">по названию</a>
+          <a href="#" class="sort-result sort-active"><div class="icon-down"></div> </a>
+          <a href="#" class="sort-result"><div class="icon-up"></div> </a>
         </div>
       </div>
       <h2 class="visually-hidden">Результаты поиска</h2>

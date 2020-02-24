@@ -105,6 +105,7 @@ header {
   display: block;
   margin-top: auto;
   margin-bottom: auto;
+  font-weight: 500;
 }
 
 .basket_ico::after {
@@ -821,9 +822,47 @@ header {
   margin-bottom: 56px;
 }
 
+.coast-min-max {
+  width: 80px;
+  height: 38px;
+  border: none;
+  background: #eeeeee;
+}
+
+.coast-min-max::-webkit-input-placeholder {
+  color: black;
+  text-align: center;
+}
+
 .grid {
   margin: 0;
   margin-bottom: 21px;
+}
+
+.grid-radio input[type=radio] {
+  display: none;
+}
+
+.grid-radio label {
+  opacity: 0.4;
+}
+
+.grid-radio label:hover {
+  opacity: 1;
+}
+
+input[type=radio] + label span {
+  display:inline-block;
+  width:25px;
+  height:25px;
+  margin:-1px 10px 0 0;
+  vertical-align:middle;
+  background:url(../img/radio-off.svg) left top no-repeat;
+  cursor:pointer;
+}
+
+input[type=radio]:checked + label span {
+  background: url(../img/radio-on.svg) left no-repeat;
 }
 
 .grid-radio {
@@ -846,6 +885,33 @@ header {
   margin-bottom: 48px;
   justify-content: space-between;
 }
+
+.features-chekbox input[type=checkbox] {
+  display: none;
+}
+
+.features-chekbox label {
+  opacity: 0.4;
+}
+
+.features-chekbox label:hover {
+  opacity: 1;
+}
+
+input[type=checkbox] + label span {
+  display:inline-block;
+  width:25px;
+  height:25px;
+  margin:-1px 10px 0 0;
+  vertical-align:middle;
+  background:url(../img/checkbox-off.svg) left top no-repeat;
+  cursor:pointer;
+}
+
+input[type=checkbox]:checked + label span {
+  background: url(../img/checkbox-on.svg) left no-repeat;
+}
+
 
 .parametrs p {
   font-weight: bold;
@@ -904,6 +970,15 @@ header {
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
+}
+
+.prod-name:hover,
+.prod-name:focus {
+  color: #fb565a;
+}
+
+.prod-name:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /*=======================================================================================================================================*/
@@ -988,10 +1063,6 @@ header {
   margin: 0;
 }
 
-.sort-no-active {
-  opacity: 0.3;
-}
-
 .sort {
   display: flex;
   flex-direction: row;
@@ -1013,6 +1084,36 @@ header {
   font-weight: normal;
   line-height: 18px;
   color: black;
+}
+
+.sort-result {
+  opacity: 0.3;
+}
+
+.sort-result:hover,
+.sort-result:focus {
+  opacity: 0.6;
+}
+
+.sort-result:active {
+  opacity: 1;
+}
+
+.sort-active {
+  opacity: 1;
+}
+
+.icon-down {
+  width: 11px;
+  height: 10px;
+  background: url("../img/icon-up-dir.svg");
+  transform: rotate(180deg);
+}
+
+.icon-up {
+  width: 11px;
+  height: 10px;
+  background: url("../img/icon-up-dir.svg");
 }
 
 .visually-hidden {
